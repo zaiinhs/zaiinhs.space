@@ -22,9 +22,6 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: "npm"
 
-      - name: build
-        run: npm run build
-
       - name: login to dockerhub
         uses: docker/login-action@v2
         with:
