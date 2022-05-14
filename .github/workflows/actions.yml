@@ -17,9 +17,3 @@ jobs:
         with:
           node-version: [16]
           cache: "npm"
-
-      - name: Build
-        run: npm run build
-
-      - name: Build
-        run: npm run test
