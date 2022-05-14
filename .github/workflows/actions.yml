@@ -22,4 +22,4 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: "npm"
-      - run: next build --if-present
+      - run: npm run build
