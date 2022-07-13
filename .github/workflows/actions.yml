@@ -3,24 +3,22 @@ name: Personal Website
 on:
   push:
     branches: [zaiinhs]
-  pull_request:
-    branches: [zaiinhs]
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        node-version: [16.x]
-
     steps:
       - uses: actions/checkout@v3
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v3
+      - uses: actions/setup-node@v3
         with:
-          node-version: ${{ matrix.node-version }}
-          cache: "npm"
+          node-version: 14
+
+      - name: Installing Depedencies
+        run: npm install
+
+      - name: Testing
+        run: CI=true npm test
 
       - name: login to dockerhub
         uses: docker/login-action@v2

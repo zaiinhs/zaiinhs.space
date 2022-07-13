@@ -1,0 +1,34 @@
+.title_section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom-style:double;
+    border-bottom-color: #b5c0b8;
+}
+
+.title_section a{
+    text-transform: uppercase;
+}
+
+.title_section a:hover{
+    padding: 4px;
+    background-color: #000;
+    color: #fff;
+}
+
+.nav{
+    padding: 0;
+    align-content: flex-start;
+    display: inline-flex;
+    list-style: none;
+}
+
+.nav li{
+    margin-right: 2rem;
+    text-transform: uppercase;
+
+}
+
+.nav li:hover{
+    text-decoration: underline overline;
+}
