@@ -1,12 +1,13 @@
-import Layout from "components/Layout";
-import type { NextPage } from "next";
+import Layout from "../components/Layout";
 
-const Home: NextPage = () => {
+export default function Home() {
   return (
     <Layout pageTitle="Homepage">
       <h1 style={{ textAlign: "center" }}>Halo 👋</h1>
+      <p style={{ color: "grey" }}>
+        Onprogress, disini akan ditampilkan repository github, referensi :
+        https://docs.github.com/en/rest/repos/repos#get-a-repository
+      </p>
     </Layout>
   );
-};
-
-export default Home;
+}

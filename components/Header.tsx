@@ -13,13 +13,10 @@ export default function Header() {
           <Link href="/">Home</Link>
         </li>
         <li>
-          <Link href="/podcast">Podcast</Link>
-        </li>
-        <li>
           <Link href="/blog">Blog</Link>
         </li>
         <li>
-          <Link href="/contact">Contact</Link>
+          <Link href="/about">About</Link>
         </li>
       </ul>
     </>
