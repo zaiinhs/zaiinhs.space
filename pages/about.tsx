@@ -6,7 +6,7 @@ export default function About() {
     <Layout pageTitle="About">
       <h1>
         Hello, <br />
-        it's nice to meet you!
+        nice to meet you!
       </h1>
       <p>I am a software engineer focused on frontend development.</p>
 
