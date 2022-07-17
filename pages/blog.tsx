@@ -7,18 +7,18 @@ interface PostProps {
 export default function Blog(props: PostProps) {
   const { dataPost } = props;
 
-  const authorPage = dataPost.feed;
+  // const authorPage = dataPost.feed;
   return (
     <Layout pageTitle="Blog">
       <h1>Blog</h1>
-      <a href={authorPage.link}>
+      {/* <a href={authorPage.link}>
         <img
           style={{ borderRadius: "50%" }}
           src={authorPage.image}
           alt="Zainal Abidin"
         />
         <span>{authorPage.title}</span>
-      </a>
+      </a> */}
       <div>
         {dataPost.items.map((post) => (
           <>
