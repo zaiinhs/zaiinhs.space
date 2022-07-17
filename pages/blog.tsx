@@ -52,8 +52,7 @@ export default function Blog(props: PostProps) {
 }
 
 export async function getStaticProps() {
-  const API = process.env.NEXT_PUBLIC_MEDIUM_POST;
-  const response = await fetch(API);
+  const response = await fetch(process.env.NEXT_PUBLIC_MEDIUM_POST);
   const dataPost = await response.json();
   return {
     props: {
