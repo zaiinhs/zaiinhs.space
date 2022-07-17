@@ -1,7 +1,7 @@
 import Layout from "../components/Layout";
 
 interface PostProps {
-  dataPost: Array<any>;
+  dataPost: any;
 }
 
 export default function Blog(props: PostProps) {
@@ -22,7 +22,7 @@ export default function Blog(props: PostProps) {
       <div>
         {dataPost.items.map((post) => (
           <>
-            <a href={post.link} target="_blank">
+            <a href={post.link} target="_blank" rel="noreferrer">
               <div
                 key={post.id}
                 style={{ margin: "10px", border: "1px solid #000" }}
@@ -30,12 +30,13 @@ export default function Blog(props: PostProps) {
                 <span>{post.pubDate}</span>
                 <h3>{post.title}</h3>
                 <div>
-                  {post.categories.map((item) => (
+                  {post.categories.map((item, index) => (
                     <span
                       style={{
                         backgroundColor: "green",
                         margin: "10px",
                       }}
+                      key={index}
                     >
                       {item}
                     </span>
