@@ -34,7 +34,7 @@ export const HomeContent = () => {
       <Flex gap="1.5rem">
         <a href="#">
           <a
-            href="https://drive.google.com/file/d/1H8ob1_qYMqNk9-6rnIEu6Ea542XoUO9m/view?usp=sharing"
+            href="https://drive.google.com/file/d/1IFugyGbDzxDbzBYyyRetj3ZiMc5R8skj/view?usp=sharing"
             target="_blank">
             <Flex alignItems="center">
               <SiReadthedocs /> Resume
