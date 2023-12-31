@@ -1,32 +1,56 @@
-import { Flex, Heading, Text, Button } from "@chakra-ui/react";
-import { SiReadthedocs, SiTwitter, SiGithub } from "react-icons/si";
+import { Flex, Heading, Text, Button, Box } from "@chakra-ui/react";
+import Link from "next/link";
+import router from "next/router";
+import { SiReadthedocs, SiLinkedin, SiGithub } from "react-icons/si";
 
 export const HomeContent = () => {
+  const { push } = router;
   return (
-    <Flex gap="2rem" direction="column" justifyContent="center" height="50vh">
-      <Heading as="h1" size="3xl">
+    <Flex
+      direction="column"
+      justifyContent="center"
+      height="100vh"
+      gap="2.2rem">
+      <Heading as="h1" size={{ base: "3xl", md: "2xl", sm: "2xl" }}>
         Hi! <br />
-        You can call me Zain
+        You can call me <span style={{ background: "orange" }}>Zain</span>
       </Heading>
-      <Text width={{ base: "40vw" }}>
-        Hi! I am a fast learner and always try to be honest and tactful towards
+      <Text width={{ lg: "40vw" }}>
+        I am a fast learner and always try to be honest and tactful towards
         others. I am to grow in what I can do and I am always looking for
         something new to learn and improve.
       </Text>
       <Flex gap="1rem">
-        <Button>Read blog</Button>
-        <Button>More about me</Button>
+        <Box padding="0.5rem 1rem" borderRadius="2rem" border="1px gray solid">
+          <Link href="/blog" target="_blank">
+            Read blog
+          </Link>
+        </Box>
+
+        <Box padding="0.5rem 1rem" borderRadius="2rem" border="1px gray solid">
+          <Link href="/about">More about me</Link>
+        </Box>
       </Flex>
       <Flex gap="1.5rem">
-        <Flex alignItems="center">
-          <SiReadthedocs /> Resume
-        </Flex>
-        <Flex alignItems="center">
-          <SiTwitter /> @zaiinhs
-        </Flex>
-        <Flex alignItems="center">
-          <SiGithub /> @zaiinhs
-        </Flex>
+        <a href="#">
+          <a
+            href="https://drive.google.com/file/d/1H8ob1_qYMqNk9-6rnIEu6Ea542XoUO9m/view?usp=sharing"
+            target="_blank">
+            <Flex alignItems="center">
+              <SiReadthedocs /> Resume
+            </Flex>
+          </a>
+        </a>
+        <a href="https://www.linkedin.com/in/zaiinhs" target="_blank">
+          <Flex alignItems="center">
+            <SiLinkedin /> @zaiinhs
+          </Flex>
+        </a>
+        <a href="https://github.com/zaiinhs" target="_blank">
+          <Flex alignItems="center">
+            <SiGithub /> @zaiinhs
+          </Flex>
+        </a>
       </Flex>
     </Flex>
   );
