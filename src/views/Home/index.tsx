@@ -1,10 +1,8 @@
 import { Flex, Heading, Text, Button, Box } from "@chakra-ui/react";
 import Link from "next/link";
-import router from "next/router";
 import { SiReadthedocs, SiLinkedin, SiGithub } from "react-icons/si";
 
 export const HomeContent = () => {
-  const { push } = router;
   return (
     <Flex
       direction="column"

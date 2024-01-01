@@ -5,7 +5,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 export const Footer = () => {
   return (
     <Stack alignItems="center" borderTop="1px gray solid">
-      <Flex marginTop="1rem" gap="4rem">
+      <Flex marginTop="1rem" gap={{ sm: "1rem", md: "4rem" }}>
         <Link href="#">
           <Text fontWeight="bold">Source Code</Text>
         </Link>
@@ -20,7 +20,7 @@ export const Footer = () => {
         </Link>
       </Flex>
 
-      <Stack marginBottom="2rem" marginTop="3rem">
+      <Stack marginBottom="2rem" marginTop="2rem">
         <Text color="gray" fontWeight="bold">
           Reach me out
         </Text>
