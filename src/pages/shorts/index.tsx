@@ -1,6 +1,6 @@
 import { ContainerMaxWidth } from "@/components/Container";
 import { HeadTitle } from "@/components/Head";
-import { Text } from "@chakra-ui/react";
+import { ShortsContents } from "@/views/Shorts";
 
 const ShortsPage = () => {
   return (
@@ -11,7 +11,7 @@ const ShortsPage = () => {
 I am to grow in what I can do and I am always looking for something new to learn and improve. Sometimes writes articles on medium with some discussion topics about javascript fundamental and frontend developer technologies."
       />
       <ContainerMaxWidth>
-        <Text>This is Shorts Page</Text>
+        <ShortsContents />
       </ContainerMaxWidth>
     </>
   );
